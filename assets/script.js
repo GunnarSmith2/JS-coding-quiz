@@ -60,3 +60,25 @@ var questions = [
       choices: [{choice: '1. adding drama'}, {choice: '2. local storage'}, {choice: '3. online shopping'}, {choice: '4. naming a variable'}]
     },
   ]; 
+
+    //if go back button is hit on high score page
+    var renderStartPage = function () {
+        containerHighScoresEl.classList.add("hide")
+        containerHighScoresEl.classList.remove("show")
+        containerStartEl.classList.remove("hide")
+        containerStartEl.classList.add("show")
+        containerScoreEl.removeChild(containerScoreEl.lastChild)
+        QuestionIndex = 0
+        gameover = ""
+        timerEl.textContent = 0 
+        score = 0
+
+        if (correctEl.className = "show") {
+            correctEl.classList.remove("show");
+            correctEl.classList.add("hide")
+        }
+        if (wrongEl.className = "show") {
+            wrongEl.classList.remove("show");
+            wrongEl.classList.add("hide");
+        }
+    }
