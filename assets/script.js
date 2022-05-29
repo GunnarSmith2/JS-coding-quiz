@@ -160,3 +160,39 @@ var questions = [
             correctEl.classList.add("hide")
         }
     }
+
+       //check if answer is correct    
+       var answerCheck = function(event) {
+        var selectedanswer = event.target
+            if (arrayShuffledQuestions[QuestionIndex].a === selectedanswer.innerText){
+                answerCorrect()
+                score = score + 7
+            }
+
+            else {
+              answerWrong()
+              score = score - 1;
+              timeleft = timeleft - 3;
+          };
+
+        //go to next question, check if there is more questions
+          QuestionIndex++
+            if  (arrayShuffledQuestions.length > QuestionIndex + 1) {
+                setQuestion()
+            }   
+            else {
+               gameover = "true";
+               showScore();
+                }
+    }
+
+      //Display total score screen at end of game
+      var showScore = function () {
+        containerQuestionEl.classList.add("hide");
+        containerEndEl.classList.remove("hide");
+        containerEndEl.classList.add("show");
+
+        var scoreDisplay = document.createElement("p");
+        scoreDisplay.innerText = ("Your final score is " + score + "!");
+        containerScoreEl.appendChild(scoreDisplay);
+    }     
