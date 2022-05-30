@@ -23,3 +23,5 @@ THEN I can save my initials and score
 (![High Scores](https://user-images.githubusercontent.com/104172862/170900182-5a328eb1-ad8a-4d85-a92d-247ce8eeb0d2.png)
 
 
+# Deployed URL
+https://gunnarsmith2.github.io/JS-coding-quiz/
