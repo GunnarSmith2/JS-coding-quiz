@@ -14,3 +14,12 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
+
+# IMAGES
+(![Quiz Front page](https://user-images.githubusercontent.com/104172862/170900136-978119c1-c42d-4aa0-97ff-aeb4c53ec669.png)
+
+(![Questions](https://user-images.githubusercontent.com/104172862/170900156-f2e4df15-832a-4997-8509-352ff94aebe0.png)
+
+(![High Scores](https://user-images.githubusercontent.com/104172862/170900182-5a328eb1-ad8a-4d85-a92d-247ce8eeb0d2.png)
+
+
